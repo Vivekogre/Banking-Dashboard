@@ -1,110 +1,81 @@
-# 🏦 Banking Dashboard - End-to-End Data Analysis Project
+🏦 Banking Analytics Dashboard
 
-This project focuses on building an interactive **Banking Dashboard** using Power BI. It involves the complete data analysis lifecycle — from data cleaning and transformation to exploratory data analysis (EDA) and visualization.
+An end-to-end data analysis project focused on understanding customer financial behavior through interactive Power BI dashboards.
 
----
+📌 Project Overview
 
-## 📌 Project Workflow
+This project demonstrates the complete data analytics lifecycle — from raw banking data stored in MySQL to meaningful business insights delivered through Power BI visualizations.
 
-Data ➡️ MySQL ➡️ Data Cleaning & Preparation ➡️ EDA ➡️ Power BI Dashboard
+The objective was to analyze customer accounts, loans, deposits, and income patterns to uncover trends that support better financial decision-making.
 
----
+🛠 Tech Stack
 
-## 📊 Dataset Information
+Database: MySQL
 
-- **Number of columns**: 24
-- **Stored in**: MySQL
+Data Processing: SQL
 
----
+Visualization: Power BI
 
-## 🔧 Steps Involved
+Data Modeling & Calculations: DAX
 
-### 1. Data Cleaning & Preparation
+🔄 Project Workflow
 
-- Categorized `Income` into bands:
-  - `Low`
-  - `Mid`
-  - `High`
-- Standardized gender, nationality, and other categorical variables.
-- Used conditional columns in Power BI to create income bands.
-- Replaced branch codes (`'1'`, `'2'`, etc.) with readable branch names.
-- Mapped gender codes:
-  - `'1'` → `Male`
-  - `'2'` → `Female`
+Data Extraction from MySQL
 
----
+Data Cleaning & Transformation
 
-### 2. Exploratory Data Analysis (EDA)
+Exploratory Data Analysis (EDA)
 
-- Categorical analysis on:
-  - Gender
-  - Nationality
-- Numerical analysis on:
-  - Credit Card Balance
-  - Bank Loans
-  - Bank Deposits
-  - Checking Account
-  - Saving Account
-  - Estimated Income
-  - Superannuation Savings
+Data Modeling
 
----
+Interactive Dashboard Creation
 
-### 3. Key Insights from EDA
+🧹 Data Preparation
 
-- Strong positive correlation between:
-  - `Bank Deposits`, `Checking Account`, `Saving Account`, and `Foreign Currency Account`.
-- Customers with high balance in one account type tend to hold substantial funds in other accounts as well.
+Segmented income into Low, Mid, and High bands
 
----
+Standardized categorical variables (Gender, Nationality, Branch)
 
-## 📈 Dashboard Pages (Power BI)
+Replaced coded values with business-readable labels
 
-1. **Home**
-2. **Loan Analysis**
-3. **Deposit Analysis**
-4. **Summary**
+Created calculated columns and measures using DAX
 
----
+📊 Analysis Performed
 
-## 🚀 Tools & Technologies
+Loan distribution analysis
 
-- **Database**: MySQL
-- **Visualization**: Power BI
-- **Languages**: SQL, DAX (in Power BI)
+Deposit and account balance analysis
 
----
+Customer segmentation based on income
 
-## 🧠 Learnings
+Correlation analysis across account types
 
-- Data wrangling using SQL
-- Power BI conditional columns
-- Deriving insights through EDA
-- Building multi-page dashboards for presentation
+Demographic breakdown (Gender & Nationality)
 
----
-### ✅ Page 1: Home  
-> Overview of the banking data with summary statistics and key visuals.  
+📈 Dashboard Pages
 
-<img src="powerbi/page1_home.png" alt="Page 1 - Home" width="700"/>
+Home: High-level KPIs and overview
 
----
+Loan Analysis: Loan trends and customer segments
 
-### ✅ Page 2: Loan Analysis  
-> Insights into loan distribution, types, and customer segments.  
+Deposit Analysis: Account balance insights
 
-<img src="powerbi/page2_loan_analysis.png" alt="Page 2 - Loan Analysis" width="700"/>
+Summary: Key findings and correlations
 
----
+🔍 Key Insights
 
-### ✅ Page 3: Deposit Analysis  
-> Breakdown of account balances, deposit types, and correlation patterns.  
+Strong positive correlation between Deposits, Checking Accounts, Savings Accounts, and Foreign Currency Accounts.
 
-<img src="powerbi/page3_deposit_analysis.png" alt="Page 3 - Deposit Analysis" width="700"/>
+High-value customers tend to maintain substantial balances across multiple financial products.
 
----
+Income segmentation provides clearer visibility into customer financial positioning.
 
-### ✅ Page 4: Summary  
-> Final insights from EDA, including correlations and demographic trends.  
+🎯 Key Learnings
 
-<img src="powerbi/page4_summary.png" alt="Page 4 - Summary" width="700"/>
+Data cleaning and transformation using SQL
+
+Building calculated measures in DAX
+
+Designing business-focused dashboards
+
+Translating raw financial data into actionable insights
